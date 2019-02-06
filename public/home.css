@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/*===========================================
+Basic layout
+==============================================*/
+
+/*start of header*/
+
+/*start of navigation bar*/
+
+.main_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: rgb(11, 36, 76);
+}
+
+.main_nav {
+  list-style: none;
+}
+
+.main_nav li {
+  margin: 10px;
+  text-align: center;
+}
+
+.main_nav li a {
+  text-decoration: none;
+  color: black;
+  font-family: Ubuntu;
+  color: rgb(11, 36, 76);
+}
+
+.main_header_title h1 {
+  font-family: Playfair Display;
+}
+
+/*end of navigation bar*/
+
+.main_header_content {
+  background: url(image/4.jpg) no-repeat center;
+  background-size: cover;
+  height: 48em;
+  background-attachment: fixed;
+}
+
+.main_header_content_title {
+  font-family: Playfair Display;
+  font-size: 2.2em;
+  color: white;
+  line-height: 1.3;
+  padding: 1.5em .5em 1em 1.5em;
+}
+
+/*end of HEADER*/
+
+/*start of MAIN*/
+
+/*primary section area*/
+
+.primary_section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 7em 0;
+}
+
+.primary_section_title {
+  color: rgb(11, 36, 76);
+}
+
+.primary_section_title h2 {
+  font-family: Montserrat;
+}
+
+.primary_section_title h2, .primary_section_title h1 {
+  text-align: center;
+  margin: 0 1em;
+}
+
+/*secondary section area*/
+
+.secondary_section {
+  background: url(image/2.jpg) no-repeat center;
+  background-size: cover;
+  height: 30em;
+}
+
+/*tertiary_section area*/
+
+.tertiary_section_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7em 0;
+  color: rgb(11, 36, 76);
+}
+
+.tertiary_section_title h2 {
+  font-family: Montserrat;
+}
+
+.tertiary_section_title h1 {
+  text-align: center;
+}
+
+.tertiary_section_content {
+  background-color: rgb(15, 49, 104);
+  color: white;
+  padding: 5em 1.5em;
+}
+
+.tertiary_section_content_info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.tertiary_section_content_info h1 {
+  margin-bottom: 1em;
+  font-family: Playfair Display;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.tertiary_section_content_info p a {
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+  border: 1px solid white;
+  padding: .5em;
+  border-radius: 3px;
+}
+
+/*fourth section area*/
+
+.fourth_section {
+  margin: 5em auto;
+}
+
+.fourth_section_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(11, 36, 76);
+}
+
+.fourth_section_title h2 {
+  font-family: Montserrat;
+  margin-top: 1em;
+}
+
+.fourth_section_title h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.fourth_section_content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#box_1 {
+  max-width: 45em;
+  width: 100%;
+}
+
+.fourth_section_content_info {
+  color: rgb(11, 36, 76);
+  margin: 3em 1em;
+  font-family: Montserrat;
+  line-height: 1.6;
+}
+
+.fourth_section_content_info h2 {
+  text-align: center;
+}
+
+hr {
+  width: 1em;
+}
+
+#reservation a {
+  text-decoration: none;
+  color: rgb(11, 36, 76);
+  border: 2px solid rgb(11, 36, 76);
+  padding: .5em;
+  border-radius: 5px;
+}
+
+#reservation {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/*end of MAIN*/
+
+/*start of FOOTER*/
+
+.main_footer {
+  background-color: rgb(11, 36, 76);
+  color: white;
+  padding: 2em 1em;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_section_one, .footer_section_two, .footer_section_three {
+  align-items: center;
+  margin: 5em 1em 0 1em;
+}
+
+.footer_section_one_title p, .footer_section_one_info p, .footer_section_two_title p, .footer_section_two_info p, .footer_section_three_title p, .footer_section_three_info p {
+  text-align: center;
+}
+
+.copy_right {
+  margin-top: 3em;
+}
+
+/*end of FOOTER*/
+
+/*=================================
+MEDIA QUERIES
+===================================*/
+
+@media (min-width: 769px) {
+  .main_header {
+    justify-content: space-between;
+    padding: 1.5em 1em;
+  }
+  .main_nav {
+    display: flex;
+    flex-direction: row;
+  }
+  /*start of FOOTER*/
+  .main_footer {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1020px) {
+  .main_header {
+    flex-direction: row;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .tertiary_section_content_info h1 {
+    width: 70%;
+    margin: 0 auto 1em auto;
+  }
+  .fourth_section_content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
